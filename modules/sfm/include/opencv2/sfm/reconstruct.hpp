@@ -69,7 +69,7 @@ namespace sfm
    @note
     - Tracks must be as precise as possible. It does not handle outliers and is very sensible to them.
 */
-CV_EXPORTS
+CV_EXPORTS_W //changed to allow python bindings to be built
 void
 reconstruct(InputArrayOfArrays points2d, OutputArray Ps, OutputArray points3d, InputOutputArray K,
             bool is_projective = false);
