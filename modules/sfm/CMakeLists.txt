@@ -5,7 +5,7 @@ set(the_description "SFM algorithms")
 ### LIBMV LIGHT EXTERNAL DEPENDENCIES ###
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 find_package(Gflags QUIET)
-find_package(Ceres QUIET)
+find_package(Ceres REQUIRED)
 if(NOT Ceres_FOUND)  # Looks like Ceres find glog on the own, so separate search isn't necessary
   find_package(Glog QUIET)
 endif()

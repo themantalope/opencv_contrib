@@ -42,6 +42,8 @@
 #ifndef __OPENCV_SFM_RECONSTRUCT_HPP__
 #define __OPENCV_SFM_RECONSTRUCT_HPP__
 
+#define CERES_FOUND true
+
 #include <vector>
 #include <string>
 
